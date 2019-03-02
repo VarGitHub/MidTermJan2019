@@ -31,20 +31,53 @@ public class Numbers {
 		int[] sortedArray =  array.clone();
 		Map<String, Long> sortTime = new HashMap<>();
 		Sort algo = new Sort();
+		//Bubble sort
 		sortedArray = algo.bubbleSort(sortedArray);
 		sortTime.put("Bubble Sort", algo.executionTime);
-		System.out.println(algo.executionTime);
 
+		//Insertion sort
 		sortedArray = array.clone();
 		sortedArray = algo.insertSort(sortedArray);
 		sortTime.put("Insertion Sort", algo.executionTime);
-		System.out.println(algo.executionTime);
 
+		//Selection sort
+		sortedArray = array.clone();
+		sortedArray = algo.selectionSort(sortedArray);
+		sortTime.put("Selection Sort", algo.executionTime);
 
+		//Merge sort
+		sortedArray = array.clone();
+		sortedArray = algo.mergeSort(sortedArray, sortedArray.length);
+		sortTime.put("Merge Sort", algo.executionTime);
+
+		//Quick sort
+		sortedArray = array.clone();
+		sortedArray = algo.quickSort(sortedArray, 0, sortedArray.length-1);
+		sortTime.put("Quick Sort", algo.executionTime);
+
+		//Heap Sort
+		sortedArray = array.clone();
+		sortedArray = algo.heapSort(sortedArray);
+		sortTime.put("Heap Sort", algo.executionTime);
+
+		//Shell sort
+		sortedArray = array.clone();
+		sortedArray = algo.shellSort(sortedArray);
+		sortTime.put("Shell Sort", algo.executionTime);
 
 		for (Map.Entry<String, Long> m : sortTime.entrySet()) {
 			System.out.println(m.getKey() + ": " + m.getValue());
 		}
+
+
+
+		/*int[] array1 = {4, 2, 30, 6, 14, 8, 1, 10, 5, 7};
+		for (int i = 0; i < sortedArray.length; i++) {
+			System.out.print(sortedArray[i] + " ");}*/
+
+
+
+
 		//int [] num = new int[10];
 		//storeRandomNumbers(num);
 		//ConnectToSqlDB connectToSqlDB = new ConnectToSqlDB();
