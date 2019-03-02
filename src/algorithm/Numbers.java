@@ -2,6 +2,10 @@ package algorithm;
 
 import databases.ConnectToSqlDB;
 
+import java.io.IOException;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -23,13 +27,18 @@ public class Numbers {
 	 */
 
 	public static void main(String[] args) throws Exception {
-		//int[] array = {4, 2, 6, 12, 8, 1, 10, 5, 7};
+
+		ConnectToSqlDB connectToSqlDB = new ConnectToSqlDB();
+		Connection connect = null;
+		PreparedStatement ps = null;
+		int fastest = Integer.MAX_VALUE;
+		String fastestSort = "";
 		int[] array = new int[100000];
 		for (int i = 0; i < 100000; i++) {
 			array[i] = (int) Math.round(Math.random() * 100000);
 		}
 		int[] sortedArray =  array.clone();
-		Map<String, Long> sortTime = new HashMap<>();
+		Map<String, Integer> sortTime = new HashMap<>();
 		Sort algo = new Sort();
 		//Bubble sort
 		sortedArray = algo.bubbleSort(sortedArray);
@@ -65,19 +74,39 @@ public class Numbers {
 		sortedArray = algo.shellSort(sortedArray);
 		sortTime.put("Shell Sort", algo.executionTime);
 
-		for (Map.Entry<String, Long> m : sortTime.entrySet()) {
-			System.out.println(m.getKey() + ": " + m.getValue());
+		for (Map.Entry<String, Integer> m : sortTime.entrySet()) {
+			if (m.getValue() < fastest) {
+				fastest = m.getValue();
+				fastestSort = m.getKey();}
+			System.out.println(m.getKey() + " for 100000 took " + m.getValue() + " Milli seconds");
 		}
 
+		System.out.println("Fastest sorting algorithm is: " + fastestSort + " with " + fastest + " milliseconds for 100000 numbers");
+		//Write the execution times to MySql table
+		try {
+			connect = connectToSqlDB.connectToSqlDatabase();
+			ps = connect.prepareStatement("DROP TABLE IF EXISTS `ExecTimes`;");
+			ps.executeUpdate();
+			ps = connect.prepareStatement("CREATE TABLE `ExecTimes` (`ID` int(11) NOT NULL AUTO_INCREMENT,`SortAlgorithm` varchar(50) DEFAULT NULL, `ExecTime` int(255), PRIMARY KEY (`ID`) );");
+			ps.executeUpdate();
+			for (Map.Entry<String, Integer> m : sortTime.entrySet()){
+				ps = connect.prepareStatement("INSERT INTO ExecTimes (SortAlgorithm, ExecTime)" + "VALUES(?, ?)");
+				ps.setString(1, m.getKey());
+				ps.setInt(2, m.getValue());
+				ps.executeUpdate();
+			}
 
+		} catch (IOException e) {
+			e.printStackTrace();
+		} catch (SQLException e) {
+			e.printStackTrace();
+		} catch (ClassNotFoundException e) {
+			e.printStackTrace();
+		}
 
 		/*int[] array1 = {4, 2, 30, 6, 14, 8, 1, 10, 5, 7};
 		for (int i = 0; i < sortedArray.length; i++) {
 			System.out.print(sortedArray[i] + " ");}*/
-
-
-
-
 		//int [] num = new int[10];
 		//storeRandomNumbers(num);
 		//ConnectToSqlDB connectToSqlDB = new ConnectToSqlDB();
@@ -97,18 +126,10 @@ public class Numbers {
 		//System.out.println("Total Execution Time of " + num.length + " numbers in Insertion Sort take: " + insertionSortExecutionTime + " milli sec");
 
 		//By following above, Continue for rest of the Sorting Algorithm....
-
-
-
-
-
-
-
-
-
 		//Come to conclusion about which Sorting Algo is better in given data set.
 
 	}
+
 
 	public static void storeRandomNumbers(int [] num){
 		Random rand = new Random();

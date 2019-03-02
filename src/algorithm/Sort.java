@@ -2,14 +2,14 @@ package algorithm;
 
 public class Sort {
 
-    long executionTime = 0;
+    int executionTime = 0;
 	/*
 	 * Please implement all the sorting algorithm. Feel free to add helper methods.
 	 * Store all the sorted data into one of the databases.
 	 */
     //Bubble sort
 	public int[] bubbleSort(int[] arr) {
-        final long startTime = System.currentTimeMillis();
+        final int startTime = (int) System.currentTimeMillis();
         for (int i = arr.length-1; i > 1; i--) {
             for (int j = 0; j < i; j++) {
                 if (arr[j] > arr[j+1]) {
@@ -19,14 +19,14 @@ public class Sort {
                 }
             }
         }
-        final long endTime = System.currentTimeMillis();
-        final long executionTime = endTime - startTime;
+        final int endTime = (int) System.currentTimeMillis();
+        final int executionTime = endTime - startTime;
         this.executionTime = executionTime;
         return arr;
     }
     //Insertion sort
     public int[] insertSort(int[] arr) {
-        final long startTime = System.currentTimeMillis();
+        final int startTime = (int) System.currentTimeMillis();
         for (int i = 1; i < arr.length; i++ ) {
             int temp = arr[i];
             int j = i;
@@ -36,14 +36,14 @@ public class Sort {
             }
             arr[j] = temp;
         }
-        final long endTime = System.currentTimeMillis();
-        final long executionTime = endTime - startTime;
+        final int endTime = (int) System.currentTimeMillis();
+        final int executionTime = endTime - startTime;
         this.executionTime = executionTime;
         return arr;
     }
     //Selection sort
     public int[] selectionSort(int [] array){
-        final long startTime = System.currentTimeMillis();
+        final int startTime = (int) System.currentTimeMillis();
         int [] list = array;
         for(int j=0; j<array.length-1; j++){
             int min = j;
@@ -55,14 +55,14 @@ public class Sort {
             array[min] = array[j];
             array[j] = temp;
         }
-        final long endTime = System.currentTimeMillis();
-        final long executionTime = endTime - startTime;
+        final int endTime = (int) System.currentTimeMillis();
+        final int executionTime = endTime - startTime;
         this.executionTime = executionTime;
         return list;
     }
     //Merge sort
     public int[] mergeSort(int[] arr, int size) {
-        final long startTime = System.currentTimeMillis();
+        final int startTime = (int) System.currentTimeMillis();
         if (size >= 2) {
             int mid =  size / 2;
             int[] left = new int[mid];
@@ -75,8 +75,8 @@ public class Sort {
             mergeSort(right, size-mid);
             merge(arr, left, right, mid, size-mid);
         }
-        final long endTime = System.currentTimeMillis();
-        final long executionTime = endTime - startTime;
+        final int endTime = (int) System.currentTimeMillis();
+        final int executionTime = endTime - startTime;
         this.executionTime = executionTime;
         return arr;
     }
@@ -99,14 +99,14 @@ public class Sort {
     }
     //Quick sort
     public int[] quickSort(int[] arr, int low, int high) {
-        final long startTime = System.currentTimeMillis();
+        final int startTime = (int) System.currentTimeMillis();
         if (low < high) {
             int partitionIndex = partition(arr, low, high);
             quickSort(arr, low, partitionIndex-1);
             quickSort(arr, partitionIndex+1, high);
         }
-        final long endTime = System.currentTimeMillis();
-        final long executionTime = endTime - startTime;
+        final int endTime = (int) System.currentTimeMillis();
+        final int executionTime = endTime - startTime;
         this.executionTime = executionTime;
         return arr;
     }
@@ -128,7 +128,7 @@ public class Sort {
     }
     //Heap sort
     public int[] heapSort(int arr[]) {
-        final long startTime = System.currentTimeMillis();
+        final int startTime = (int) System.currentTimeMillis();
         int n = arr.length;
         for (int i = n / 2 - 1; i >= 0; i--) {
             heapify(arr, n, i);
@@ -140,8 +140,8 @@ public class Sort {
             arr[i] = temp;
             heapify(arr, i, 0);
         }
-        final long endTime = System.currentTimeMillis();
-        final long executionTime = endTime - startTime;
+        final int endTime = (int) System.currentTimeMillis();
+        final int executionTime = endTime - startTime;
         this.executionTime = executionTime;
         return arr;
     }
@@ -165,7 +165,7 @@ public class Sort {
     }
     //Shell sort
     public int[] shellSort(int[] arr) {
-        final long startTime = System.currentTimeMillis();
+        final int startTime = (int) System.currentTimeMillis();
         int n = arr.length;
         for (int gap = n/2; gap > 0; gap /= 2)
         {
@@ -178,8 +178,8 @@ public class Sort {
                 arr[j] = temp;
             }
         }
-        final long endTime = System.currentTimeMillis();
-        final long executionTime = endTime - startTime;
+        final int endTime = (int) System.currentTimeMillis();
+        final int executionTime = endTime - startTime;
         this.executionTime = executionTime;
         return arr;
     }

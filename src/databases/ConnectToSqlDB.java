@@ -30,7 +30,7 @@ public class ConnectToSqlDB {
         return prop;
     }
 
-    public static Connection connectToSqlDatabase() throws IOException, SQLException, ClassNotFoundException {
+    public Connection connectToSqlDatabase() throws IOException, SQLException, ClassNotFoundException {
         Properties prop = loadProperties();
         String driverClass = prop.getProperty("MYSQLJDBC.driver");
         String url = prop.getProperty("MYSQLJDBC.url");
@@ -181,7 +181,7 @@ public class ConnectToSqlDB {
         }
     }
 
-    public static List<User> readUserProfileFromSqlTable()throws IOException, SQLException, ClassNotFoundException{
+    public List<User> readUserProfileFromSqlTable()throws IOException, SQLException, ClassNotFoundException{
         List<User> list = new ArrayList<>();
         User user = null;
         try{
@@ -211,9 +211,9 @@ public class ConnectToSqlDB {
     }
 
     public static void main(String[] args)throws IOException, SQLException, ClassNotFoundException {
-        List<User> list = readUserProfileFromSqlTable();
-        for(User user:list){
-            System.out.println(user.getStName() + " " + user.getStID()+ " " + user.getStDOB());
+        //List<User> list = readUserProfileFromSqlTable();
+        //for(User user:list){
+          //  System.out.println(user.getStName() + " " + user.getStID()+ " " + user.getStDOB());
         }
-    }
 }
+
