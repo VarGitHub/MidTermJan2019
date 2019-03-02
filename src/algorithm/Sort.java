@@ -7,6 +7,39 @@ public class Sort {
 	 * Please implement all the sorting algorithm. Feel free to add helper methods.
 	 * Store all the sorted data into one of the databases.
 	 */
+    public int[] bubbleSort(int[] arr) {
+        final long startTime = System.currentTimeMillis();
+        for (int i = arr.length-1; i > 1; i--) {
+            for (int j = 0; j < i; j++) {
+                if (arr[j] > arr[j+1]) {
+                    int temp = arr[j];
+                    arr[j] = arr[j+1];
+                    arr[j+1] = temp;
+                }
+            }
+        }
+        final long endTime = System.currentTimeMillis();
+        final long executionTime = endTime - startTime;
+        this.executionTime = executionTime;
+        return arr;
+    }
+
+    public int[] insertSort(int[] arr) {
+        final long startTime = System.currentTimeMillis();
+        for (int i = 1; i < arr.length; i++ ) {
+            int temp = arr[i];
+            int j = i;
+            while (j > 0 && arr[j-1] >= temp) {
+                arr[j] = arr[j-1];
+                j--;
+            }
+            arr[j] = temp;
+        }
+        final long endTime = System.currentTimeMillis();
+        final long executionTime = endTime - startTime;
+        this.executionTime = executionTime;
+        return arr;
+    }
 
 
     public int[] selectionSort(int [] array){
@@ -31,7 +64,7 @@ public class Sort {
         return list;
     }
 
-    public int[] insertionSort(int [] array){
+    /*public int[] insertionSort(int [] array){
         final long startTime = System.currentTimeMillis();
         int [] list = array;
         //implement here
@@ -105,5 +138,5 @@ public class Sort {
         for(int i=0; i<array.length; i++){
             System.out.println(array[i]);
         }
-    }
+    }*/
 }
