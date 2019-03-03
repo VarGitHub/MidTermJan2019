@@ -41,6 +41,7 @@ public class Numbers {
 		int[] sortedArray =  array.clone();
 		Map<String, Integer> sortTime = new HashMap<>();
 		Sort algo = new Sort();
+
 		//Bubble sort
 		sortedArray = algo.bubbleSort(sortedArray);
 		sortTime.put("Bubble Sort", algo.executionTime);
