@@ -2,12 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bf125068-80bd-41d7-926e-f856450ecbd3" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/string/problems/Anagram.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/string/problems/Anagram.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/string/problems/DetermineLargestWord.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/string/problems/DetermineLargestWord.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/string/problems/DuplicateWord.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/string/problems/DuplicateWord.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/string/problems/Palindrome.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/string/problems/Palindrome.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/string/problems/Permutation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/string/problems/Permutation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/string/problems/UnitTestingStringProblem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/string/problems/UnitTestingStringProblem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CodingExamJanuary2019/json/parser/CnnAPI.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CodingExamJanuary2019/json/parser/CnnAPI.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CodingExamJanuary2019/math/problems/Factorial.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CodingExamJanuary2019/math/problems/Factorial.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CodingExamJanuary2019/math/problems/Fibonacci.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CodingExamJanuary2019/math/problems/Fibonacci.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/databases/ConnectToSqlDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/databases/ConnectToSqlDB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/json/parser/CnnAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/json/parser/CnnAPI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/math/problems/Factorial.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/math/problems/Factorial.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/math/problems/Fibonacci.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/math/problems/Fibonacci.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/math/problems/FindLowestDifference.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/math/problems/FindLowestDifference.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/math/problems/FindMissingNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/math/problems/FindMissingNumber.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/math/problems/LowestNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/math/problems/LowestNumber.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/math/problems/MakePyramid.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/math/problems/MakePyramid.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/math/problems/Pattern.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/math/problems/Pattern.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/math/problems/PrimeNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/math/problems/PrimeNumber.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,19 +27,28 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/databases/ConnectToMongoDB.java">
+        <entry file="file://$PROJECT_DIR$/src/math/problems/Factorial.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1266">
-              <caret line="94" column="113" selection-start-line="94" selection-start-column="113" selection-end-line="94" selection-end-column="113" />
+            <state relative-caret-position="225">
+              <caret line="15" column="37" selection-start-line="15" selection-start-column="37" selection-end-line="15" selection-end-column="37" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/string/problems/UnitTestingStringProblem.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/math/problems/Fibonacci.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="555">
-              <caret line="60" column="9" selection-start-line="60" selection-start-column="9" selection-end-line="60" selection-end-column="9" />
+            <state relative-caret-position="180">
+              <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/algorithm/Numbers.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-497">
+              <caret line="43" selection-start-line="43" selection-end-line="43" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -40,10 +57,76 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/string/problems/Anagram.java">
+        <entry file="file://$PROJECT_DIR$/src/math/problems/FindLowestDifference.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="13" column="8" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="8" />
+            <state relative-caret-position="345">
+              <caret line="23" column="65" lean-forward="true" selection-start-line="23" selection-start-column="65" selection-end-line="23" selection-end-column="65" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/math/problems/FindMissingNumber.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="15" selection-start-line="15" selection-end-line="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/math/problems/LowestNumber.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="23" selection-start-line="23" selection-end-line="23" />
+              <folding>
+                <element signature="e#632#641#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/math/problems/MakePyramid.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="15" column="26" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/math/problems/Pattern.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="390">
+              <caret line="26" column="26" selection-start-line="26" selection-start-column="26" selection-end-line="26" selection-end-column="26" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/math/problems/PrimeNumber.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="15" column="61" selection-start-line="15" selection-start-column="61" selection-end-line="15" selection-end-column="61" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/databases/ConnectToSqlDB.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="61" selection-start-line="61" selection-end-line="61" />
+              <folding>
+                <element signature="e#2031#2040#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -60,6 +143,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>long</find>
+      <find>getRes</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -71,7 +155,6 @@
         <option value="$PROJECT_DIR$/src/codelab/status/roster-file-12-23-2018.csv" />
         <option value="$PROJECT_DIR$/src/secret.properties" />
         <option value="$PROJECT_DIR$/src/json/parser/JsonReaderUtil.java" />
-        <option value="$PROJECT_DIR$/src/databases/ConnectToSqlDB.java" />
         <option value="$PROJECT_DIR$/src/algorithm/Sort.java" />
         <option value="$PROJECT_DIR$/src/algorithm/UnitTestSorting.java" />
         <option value="$PROJECT_DIR$/src/parser/XmlReader.java" />
@@ -90,6 +173,16 @@
         <option value="$PROJECT_DIR$/src/string/problems/Permutation.java" />
         <option value="$PROJECT_DIR$/src/string/problems/Anagram.java" />
         <option value="$PROJECT_DIR$/src/string/problems/UnitTestingStringProblem.java" />
+        <option value="$PROJECT_DIR$/src/json/parser/CnnAPI.java" />
+        <option value="$PROJECT_DIR$/src/math/problems/Factorial.java" />
+        <option value="$PROJECT_DIR$/src/math/problems/Fibonacci.java" />
+        <option value="$PROJECT_DIR$/src/math/problems/FindMissingNumber.java" />
+        <option value="$PROJECT_DIR$/src/databases/ConnectToSqlDB.java" />
+        <option value="$PROJECT_DIR$/src/math/problems/LowestNumber.java" />
+        <option value="$PROJECT_DIR$/src/math/problems/PrimeNumber.java" />
+        <option value="$PROJECT_DIR$/src/math/problems/Pattern.java" />
+        <option value="$PROJECT_DIR$/src/math/problems/FindLowestDifference.java" />
+        <option value="$PROJECT_DIR$/src/math/problems/MakePyramid.java" />
       </list>
     </option>
   </component>
@@ -128,6 +221,12 @@
               <item name="MidtermJanuary2019" type="b2602c69:ProjectViewProjectNode" />
               <item name="MidtermJanuary2019" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="databases" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MidtermJanuary2019" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MidtermJanuary2019" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="problems" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -141,7 +240,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551594359713" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551642852074" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
@@ -164,20 +263,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.UnitTestingStringProblem.testAnagrams">
+  <component name="RunManager" selected="Application.MakePyramid">
     <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Anagram" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="string.problems.Anagram" />
+    <configuration name="FindLowestDifference" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="math.problems.FindLowestDifference" />
       <module name="CodingExamJanuary2019" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="string.problems.*" />
+          <option name="PATTERN" value="math.problems.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -185,13 +284,55 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DuplicateWord" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="string.problems.DuplicateWord" />
+    <configuration name="LowestNumber" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="math.problems.LowestNumber" />
       <module name="CodingExamJanuary2019" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="string.problems.*" />
+          <option name="PATTERN" value="math.problems.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MakePyramid" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="math.problems.MakePyramid" />
+      <module name="CodingExamJanuary2019" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="math.problems.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Pattern" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="math.problems.Pattern" />
+      <module name="CodingExamJanuary2019" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="math.problems.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PrimeNumber" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="math.problems.PrimeNumber" />
+      <module name="CodingExamJanuary2019" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="math.problems.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -208,63 +349,6 @@
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UnitTestingStringProblem.testAnagrams" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="CodingExamJanuary2019" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="string.problems.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="string.problems" />
-      <option name="MAIN_CLASS_NAME" value="string.problems.UnitTestingStringProblem" />
-      <option name="METHOD_NAME" value="testAnagrams" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UnitTestingStringProblem.testDuplicates" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="CodingExamJanuary2019" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="string.problems.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="string.problems" />
-      <option name="MAIN_CLASS_NAME" value="string.problems.UnitTestingStringProblem" />
-      <option name="METHOD_NAME" value="testDuplicates" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UnitTestingStringProblem.testLargestWord" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="CodingExamJanuary2019" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="string.problems.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="string.problems" />
-      <option name="MAIN_CLASS_NAME" value="string.problems.UnitTestingStringProblem" />
-      <option name="METHOD_NAME" value="testLargestWord" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <properties />
-      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -288,19 +372,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.DuplicateWord" />
-      <item itemvalue="TestNG.UnitTestingStringProblem.testLargestWord" />
-      <item itemvalue="TestNG.UnitTestingStringProblem.testDuplicates" />
-      <item itemvalue="Application.Anagram" />
-      <item itemvalue="TestNG.UnitTestingStringProblem.testAnagrams" />
+      <item itemvalue="Application.LowestNumber" />
+      <item itemvalue="Application.PrimeNumber" />
+      <item itemvalue="Application.Pattern" />
+      <item itemvalue="Application.FindLowestDifference" />
+      <item itemvalue="Application.MakePyramid" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.UnitTestingStringProblem.testAnagrams" />
-        <item itemvalue="Application.Anagram" />
-        <item itemvalue="TestNG.UnitTestingStringProblem.testDuplicates" />
-        <item itemvalue="Application.DuplicateWord" />
-        <item itemvalue="TestNG.UnitTestingStringProblem.testLargestWord" />
+        <item itemvalue="Application.MakePyramid" />
+        <item itemvalue="Application.FindLowestDifference" />
+        <item itemvalue="Application.Pattern" />
+        <item itemvalue="Application.PrimeNumber" />
+        <item itemvalue="Application.LowestNumber" />
       </list>
     </recent_temporary>
   </component>
@@ -318,9 +402,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="UnitTestSorting_testMergeSort - 2019.03.02 at 16h 14m 05s.xml">
-      <configuration name="UnitTestSorting.testMergeSort" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="UnitTestSorting_testQuickSort - 2019.03.02 at 16h 14m 59s.xml">
       <configuration name="UnitTestSorting.testQuickSort" configurationId="TestNG" />
     </history-entry>
@@ -348,12 +429,15 @@
     <history-entry file="UnitTestingStringProblem_testAnagrams - 2019.03.02 at 22h 25m 15s.xml">
       <configuration name="UnitTestingStringProblem.testAnagrams" configurationId="TestNG" />
     </history-entry>
+    <history-entry file="UnitTestingStringProblem_testAnagrams - 2019.03.02 at 22h 26m 00s.xml">
+      <configuration name="UnitTestingStringProblem.testAnagrams" configurationId="TestNG" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="1280" y="-511" width="1920" height="1080" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16719915" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16719915" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -362,7 +446,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32928064" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.2046606" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.2046606" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39817628" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -397,18 +481,17 @@
           <properties />
           <option name="timeStamp" value="10" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/json/parser/JsonReaderUtil.java</url>
+          <line>47</line>
+          <properties />
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/codelab/status/roster-file-12-23-2018.csv" />
-    <entry file="file://$PROJECT_DIR$/src/json/parser/JsonReaderUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="57" column="43" selection-start-line="57" selection-start-column="43" selection-end-line="57" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/algorithm/UnitTestSorting.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1140">
@@ -426,13 +509,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/databases/ConnectToSqlDB.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1211">
-          <caret line="98" lean-forward="true" selection-start-line="98" selection-end-line="98" />
         </state>
       </provider>
     </entry>
@@ -544,16 +620,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/algorithm/Numbers.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="431">
-          <caret line="43" selection-start-line="43" selection-end-line="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/string/problems/Permutation.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
@@ -589,13 +655,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/databases/ConnectToMongoDB.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1266">
-          <caret line="94" column="113" selection-start-line="94" selection-start-column="113" selection-end-line="94" selection-end-column="113" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/string/problems/Anagram.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
@@ -605,8 +664,177 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/string/problems/UnitTestingStringProblem.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
+        <state relative-caret-position="900">
           <caret line="60" column="9" selection-start-line="60" selection-start-column="9" selection-end-line="60" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/databases/ConnectToMongoDB.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1266">
+          <caret line="94" column="113" selection-start-line="94" selection-start-column="113" selection-end-line="94" selection-end-column="113" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/gson-2.6.2.jar!/com/google/gson/JsonArray.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="278">
+          <caret line="84" selection-start-line="84" selection-end-line="84" />
+          <folding>
+            <element signature="e#2028#2029#0" expanded="true" />
+            <element signature="e#2071#2072#0" expanded="true" />
+            <element signature="e#2258#2259#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/json/parser/JsonReaderUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="56" selection-start-line="56" selection-end-line="56" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/gson-2.6.2.jar!/com/google/gson/JsonElement.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="38" selection-start-line="38" selection-end-line="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/json/parser/CnnAPI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="339">
+          <caret line="51" column="4" selection-start-line="51" selection-start-column="4" selection-end-line="51" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/mysql-connector-java-8.0.15.jar!/com/mysql/cj/jdbc/AbandonedConnectionCleanupThread.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="152" selection-start-line="152" selection-end-line="152" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/mysql-connector-java-8.0.15.jar!/com/mysql/cj/jdbc/Driver.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+          <folding>
+            <element signature="e#0#528#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/mysql-connector-java-8.0.15.jar!/com/mysql/cj/jdbc/NonRegisteringDriver.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="262">
+          <caret line="69" selection-start-line="69" selection-end-line="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/mysql-connector-java-8.0.15.jar!/com/mysql/cj/jdbc/ConnectionImpl.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="1262" selection-start-line="1262" selection-end-line="1262" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/mysql-connector-java-8.0.15.jar!/com/mysql/cj/jdbc/ClientPreparedStatement.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="786" selection-start-line="786" selection-end-line="786" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/databases/ConnectToSqlDB.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="61" selection-start-line="61" selection-end-line="61" />
+          <folding>
+            <element signature="e#2031#2040#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/algorithm/Numbers.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-497">
+          <caret line="43" selection-start-line="43" selection-end-line="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/math/problems/Factorial.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="37" selection-start-line="15" selection-start-column="37" selection-end-line="15" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/math/problems/Fibonacci.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/math/problems/FindLowestDifference.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="65" lean-forward="true" selection-start-line="23" selection-start-column="65" selection-end-line="23" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/math/problems/FindMissingNumber.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/math/problems/LowestNumber.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
+          <folding>
+            <element signature="e#632#641#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/math/problems/MakePyramid.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="26" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/math/problems/Pattern.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="26" selection-start-line="26" selection-start-column="26" selection-end-line="26" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/math/problems/PrimeNumber.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="61" selection-start-line="15" selection-start-column="61" selection-end-line="15" selection-end-column="61" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

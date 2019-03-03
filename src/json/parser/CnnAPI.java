@@ -1,7 +1,55 @@
 package json.parser;
+import com.google.gson.JsonArray;
+import com.google.gson.JsonElement;
+import com.google.gson.JsonObject;
+import com.google.gson.JsonParser;
+
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.net.MalformedURLException;
+import java.net.URL;
+import java.net.URLConnection;
+import java.util.ArrayList;
+import java.util.List;
 
 public class CnnAPI {
-    /*
+    public static void main(String[] args) throws MalformedURLException, IOException {
+        String sURL = "http://newsapi.org/v2/top-headlines?sources=cnn&apiKey=0d9e35dfa3c140aab8bf9cdd70df957f";
+
+
+        /*URL url = new URL(sURL);
+        URLConnection request = url.openConnection();
+        request.connect();
+        JsonArray  jsonArray = null;
+        JsonObject rootObj = null;
+        JsonParser jp = new JsonParser();
+        JsonElement root = jp.parse(new InputStreamReader((InputStream) request.getContent()));
+        if (root instanceof JsonObject) {
+            rootObj = root.getAsJsonObject();
+        } else if (root instanceof JsonArray) {
+            jsonArray =  root.getAsJsonArray();
+        }
+        System.out.println(rootObj);*/
+        /*rootObj = rootObj.getAsJsonObject("data");
+        jsonArray = rootObj.getAsJsonArray("translations");
+        rootObj = jsonArray.get(0).getAsJsonObject();
+        String result = rootObj.get("translatedText").toString();
+        System.out.println(result);*/
+        /*for (int i = 0; i < jsonArray.size()-1; i++) {
+            try {
+                JsonObject jsonobject = jsonArray.get(i).getAsJsonObject();
+                //you code start here
+                //String articles = jsonobject.get("source").toString();
+                System.out.println(jsonobject);
+
+
+            }catch(Exception ex){
+
+            }
+        }*/
+    }
+     /*
       You can get API_KEY from this below link. Once you have the API_KEY, you can fetch the top-headlines news.
       https://newsapi.org/s/cnn-api
 

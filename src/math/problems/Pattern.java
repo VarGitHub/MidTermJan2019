@@ -1,4 +1,6 @@
 package math.problems;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Pattern {
 
@@ -8,8 +10,25 @@ public class Pattern {
 		 *
 		 *
 		 */
-		
-
-
+		List<Integer> list = new ArrayList<>();
+		list = numPattern(100);
+		for (Integer i : list) {
+			System.out.print(i + " ");
+		}
+	}
+	public static List<Integer> numPattern(int n) {
+		int count = 1;
+		List<Integer> numList = new ArrayList<>();
+		numList.add(n);
+		for (int i = 0; i < 10; i++) {
+			for (int j =0; j < 10; j++) {
+				n = n-count;
+				if ( n < 0)
+					break;
+				numList.add(n);
+			}
+			count++;
+		}
+		return numList;
 	}
 }
