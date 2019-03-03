@@ -18,7 +18,7 @@ public class CnnAPI {
         String sURL = "http://newsapi.org/v2/top-headlines?sources=cnn&apiKey=0d9e35dfa3c140aab8bf9cdd70df957f";
 
 
-        /*URL url = new URL(sURL);
+        URL url = new URL(sURL);
         URLConnection request = url.openConnection();
         request.connect();
         JsonArray  jsonArray = null;
@@ -30,13 +30,8 @@ public class CnnAPI {
         } else if (root instanceof JsonArray) {
             jsonArray =  root.getAsJsonArray();
         }
-        System.out.println(rootObj);*/
-        /*rootObj = rootObj.getAsJsonObject("data");
-        jsonArray = rootObj.getAsJsonArray("translations");
-        rootObj = jsonArray.get(0).getAsJsonObject();
-        String result = rootObj.get("translatedText").toString();
-        System.out.println(result);*/
-        /*for (int i = 0; i < jsonArray.size()-1; i++) {
+
+        for (int i = 0; i < jsonArray.size()-1; i++) {
             try {
                 JsonObject jsonobject = jsonArray.get(i).getAsJsonObject();
                 //you code start here
@@ -47,7 +42,7 @@ public class CnnAPI {
             }catch(Exception ex){
 
             }
-        }*/
+        }
     }
      /*
       You can get API_KEY from this below link. Once you have the API_KEY, you can fetch the top-headlines news.

@@ -1,4 +1,7 @@
 package math.problems;
+import java.awt.*;
+import java.util.HashMap;
+import java.util.Map;
 
 public class MakePyramid {
     public static void main(String[] args) {
@@ -17,11 +20,12 @@ public class MakePyramid {
 
         }
         public static void printPyramid(int n) {
+             Map<String, String> pattern = new HashMap<>();
              for (int i = n, j = 1; i > 0; i--, j++) {
                 printSpaces(i, j);
                 printStars(j, 1);
                 System.out.println();}
-        }
+             }
         public static void printSpaces(int n, int j) {
             if (n == 1)
                 return;
