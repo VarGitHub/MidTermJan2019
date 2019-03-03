@@ -2,6 +2,7 @@
   <library name="testng-7.0.0-beta3">
     <CLASSES>
       <root url="jar://$PROJECT_DIR$/lib/testng-7.0.0-beta3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/unirest-java-1.4.7.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />
