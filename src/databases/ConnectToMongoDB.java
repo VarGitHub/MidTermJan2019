@@ -91,17 +91,17 @@ public class ConnectToMongoDB {
             student.setScore(score);
             String id = (String) doc.get("id");
             student.setId(id);
-            student = new Student(student.getFirstName(),student.getLastName(),student.getScore(),student.getId());
-            list.add(student);
+            //student = new Student(student.getFirstName(),student.getLastName(),student.getScore(),student.getId());
+            list.add(new Student(student.getFirstName(),student.getLastName(),student.getScore(),student.getId()));
         }
         return list;
     }
 
     public static void main(String[] args){
-        insertIntoToMongoDB(new User("Naomi Chan", "4493","07-1996"));
+        /*insertIntoToMongoDB(new User("Naomi Chan", "4495","07-1996"));
         List<User> user = readUserProfileFromMongoDB();
         for(User person:user){
             System.out.println(person.getStName()+ " "+ person.getStID());
-        }
+        }*/
     }
 }
