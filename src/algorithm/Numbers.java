@@ -31,6 +31,7 @@ public class Numbers {
 		ConnectToSqlDB connectToSqlDB = new ConnectToSqlDB();
 		Connection connect = null;
 		PreparedStatement ps = null;
+		final int maxVal = 100000;
 		int fastest = Integer.MAX_VALUE;
 		String fastestSort = "";
 		int[] array = new int[100000];
@@ -73,6 +74,11 @@ public class Numbers {
 		sortedArray = array.clone();
 		sortedArray = algo.shellSort(sortedArray);
 		sortTime.put("Shell Sort", algo.executionTime);
+
+		//Bucket sort
+		sortedArray = array.clone();
+		sortedArray = algo.bucketSort(sortedArray, maxVal);
+		sortTime.put("Bucket Sort", algo.executionTime);
 
 		for (Map.Entry<String, Integer> m : sortTime.entrySet()) {
 			if (m.getValue() < fastest) {
