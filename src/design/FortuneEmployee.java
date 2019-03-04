@@ -32,13 +32,14 @@ public class FortuneEmployee {
 			if (line == null)
 				break;
 			parts = line.split(",");
+			empInfo.add(new EmployeeInfo(parts[0], parts[1], parts[2].charAt(0), Double.parseDouble(parts[3]), parts[4], parts[5]));
 		}
 		} catch (FileNotFoundException e){
 			e.printStackTrace();
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-		empInfo.add(new EmployeeInfo(parts[0], parts[1], parts[2].charAt(0), Double.parseDouble(parts[3]), parts[4], parts[5]));
+		//empInfo.add(new EmployeeInfo(parts[0], parts[1], parts[2].charAt(0), Double.parseDouble(parts[3]), parts[4], parts[5]));
 		empInfo.add(new EmployeeInfo("Allen", "Barry", 'M', 80000.0,  "Developer", "1/3/2000"));
 
 		for (EmployeeInfo e : empInfo) {
@@ -48,9 +49,9 @@ public class FortuneEmployee {
 				e.setGrossSalary();
 			}
 		}
-		empInfo.get(1).assignDepartment(Employee.Department.Development);
-		empInfo.get(1).setPerformance(3);
-		empInfo.get(1).setGrossSalary();
+		empInfo.get(2).assignDepartment(Employee.Department.Development);
+		empInfo.get(2).setPerformance(3);
+		empInfo.get(2).setGrossSalary();
 
 		for (EmployeeInfo e : empInfo) {
 			System.out.println(e);}

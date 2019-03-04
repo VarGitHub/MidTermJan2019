@@ -247,6 +247,6 @@ public class EmployeeInfo implements Employee {
 		}
 	}
 	public String toString() {
-		return lastName+" "+firstName+", "+empId+", "+title+", "+department+" department "+grossSalary;
+		return firstName+" "+lastName+", "+empId+", "+title+", "+department+" department "+grossSalary;
 	}
 }
