@@ -1,84 +1,233 @@
 Please answer the below core-java Questions:
 
 What is programing language?
-A.
-
-
-
+A programming language is a set of commands, instructions, and other syntax use to create a software program
 
 What jdk contains or composed of and define each components?
-A.
-
-
-
-
+JDK – Java Development Kit
+Main components include
+Java Compiler - coverts source cod einto bytecode
+JDB - Java debugger
+javadoc - the documentation generator, which automatically generates documentation from source code comments
+appletviewer - this tool can be used to run and debug Java applets without a web browser
+jar - the archiver, which packages related class libraries into a single JAR file
 
 What is IDE?
-A.
+Integrated Development Environment
+
 What are the IDEs available in the market to support java?
+Main IDEs for Java – IntelliJ, Eclipse, NetBeans, BlueJ
+
 Explain the entire java life cycle.
+1. Source code is created using a text editor or IDE. E.g.: Filename xxxx.java
+2. Bytecode file is generated when the .java file is compiled using javac command. E.g.: xxxx.class
+3. The class file is executed using JVM
+
 what is class?
+A class is a user defined blueprint or prototype from which objects are created.
+
 What is object?
+An object is a specimen of a class. Objects are often used to model real-world objects.
+
 What is the entry point of an application?
+Main() method – public static void main(String[] args)
+
 Why main is static?
+Since the execution of a Java program starts with "main" method (entry point), JVM should be able to invoke the class without creating an object, hence the need to declare it as static method
+
 Which class is the superclass of all classes?
+The Object class, which is stored in the java.lang package
+
 What is difference between path and classpath variables?
+Path - an environment variable which is used by the operating system to find the executables.
+Classpath - an environment variable which is used by Java compiler  and the JVM to find the path of classes
+
 What is the difference between an Interface and Abstract class?
+Interface can have only abstract methods. Abstract class can have abstract and non-abstract methods
+
 Can you make an Object from an Interface and Abstract class ? if not how do you use it ?
+Abstract class – A subclass has to be created that extends the abstract class and implement all the abstract methods declared in the abstract class
+Interface – When a class implements an interface, it has to implement all the abstract methods.
+
 what is Access Specifier?
+It's a keyword to help restrict the scope of a class, constructor, variable, method or data member. Four types of specifiers are default, private, protected and public
+
 What is OOP ? Define each feature of java OOP.
+OOP - Object Oriented Programming
+Abstraction - Abstraction is providing essential information about the data and hiding implementation details.
+Inheritance - Inheritance is the ability to create new classes that are built on existing classes. When you inherit from an existing class, you reuse (or inherit) its methods and fields
+              and you add new methods and fields to adapt your new class to new situations.
+Polymorphism - Polymorphism in Java is a concept by which we can perform a single action in different ways. Method overloading, method overriding and object upcasting are different ways this is achieved.
+Encapsulation - A mechanism for restricting direct access to the class components and facilitating bundling of data with the methods operating on the same.
+
 What is Java Package and which package is imported by default?
+A package is a mechanism to encapsulate a group of classes, sub packages and interfaces.
+java.lang is imported by default.
+
 What is API? Name list of API that you have used so far.
+API - Application Programming Interface is a list of all classes that are part of JDK
+List of APIs used so far - String, Collections, ArrayList, HaspMap
+
 Does java support multiple inheritance, explain why or why not?
+No. In Java, a subclass cannot extend more than one parent class. The problem occurs when there exist methods with same signature in both the super classes and subclass.
+On calling the method, the compiler cannot determine which class method to be called and even on calling which class method gets the priority.
+
 What is method overloading and when it happens?
+If a class has multiple methods having same name but different in signature, it is known as Method Overloading. It happens during compile time.
+
 Explain exceptions in java and how to handle it.
+An exception is an event, which occurs during the execution of a program, that disrupts the normal flow of the program's instructions.
+Ways to handle exception - using throws, a try-catch block or finally etc.
+
 What is static keyword in java? How it has been used in variables and methods ?
+Static keyword is a non-access modifier and is applicable for blocks, variables, methods and nested classes
+You can create a single copy of static variable and share among all the instances of the class. Memory allocation for static variable happens only once when the class is loaded in the memory.
+It's basically a "class" method. Can be invoked without creating an object for the class. It can access the static variables
+
 What is final and how it has been used variables and methods?
+Final is a keyword or reserved word in Java and can be applied to member variables, methods, class and local variables in Java. Once you make a reference final you are not allowed to change that reference.
+If you make any variable as final, you cannot change the value of final variable(It will be constant).
+A Java method with the final keyword is called a final method and it can not be overridden in the subclass.
+
 What is final, finally and finalize?
+1. Final is a keyword which is used to apply restrictions on a variable, method or class
+2. Finally is a block which is used to place important code and will be executed in the end even if an exception is handled or not
+3. Finalize is a method which used to perform clean up processing just before object is garbage collected
+
 What is a constructor ?
+A constructor is a block of code similar to a method and is used to initialize an object' state.
+
 Can we have multiple constructors in a class?
+Yes
+
 If we don't have a constructor declared, what is called during the object creation?
+A default constructor
+
 What is "this" keyword in java ?
+It refers to the current object
+
 What is "super" keyword in java? How many possible way can you use?
+he super keyword in Java is a reference variable that is used to refer parent class objects. It can be used to refer to a parent's constructors or methods
+
 What is JVM stand for ?
+Java Virtual Machine
+
 Is JVM platform independent?
+Yes
+
 What version of java are you using?
+1.8.0_201
+
 What is JAR stand for ?
+Java Archive
+
 What is the difference between JDK and JVM?
+The Java Development Kit (JDK) is a software development environment used for developing Java applications and applets and is used for compiling code to bytecode
+JVM is a virtual machine that convert bytecode to machine code
+
 What is the difference between JVM and JRE?
+JVM is a virtual machine that convert bytecode to machine code
+JRE provides the platform to execute Java programs
+
 What is compile time and run time?
+Runtime and compile time are programming terms that refer to different stages of software program development. Compile time is the instance where the code you entered is converted to executable while
+Run time is the instance where the executable is running.
+
 What is heap?
+Heap is a section of memory which contains Objects and may also contain reference variables. Instance variables are created in the heap
+
 How java manage it's memory?
+When a program is loaded into memory, it is organized into three areas of memory, code segment, stack segment and heap segment.
+Code segement - This is where compiled code resides
+Stack segment - this is where all the variables are stored befor runtime.A stack is a Last In First Out (LIFO) storage device where new storage is allocated and deallocated at only one ``end'', called the Top of the stack.
+Heap segement - this is where all the runtime data for all objects is allocated
+
 What is the difference between String, StringBuffer and StringBuilder?
+String is immutable in java, whenever we do String manipulation like concat, substring etc, it generates a new String and discard the older String for garbage collection.
+StringBuffer and StringBuilder are mutable objects in java and provide append(), insert(), delete() and substring() methods for String manipulation.
+StringBuffer is thread safe and synchronized whereas StringBuilder is not, thats why StringBuilder is more faster than StringBuffer.
+
 What is Singleton class?
+A singleton class is a class that can have only one object (an instance of the class) at a time.
+
 What is Serialization and Deserialization?
+Serialization is a mechanism of converting the state of an object into a byte stream.
+Deserialization is the reverse process where the byte stream is used to recreate the actual Java object in memory.
+
 when to use transient variable in java?
+transient is a variables modifier used in serialization. At the time of serialization, if we don’t want to save value of a particular variable in a file, then we use transient keyword.
+When JVM comes across transient keyword, it ignores original value of the variable and save default value of that variable data type.
+
 Difference between while and do..while loop?
+n While loop, condition is tested at the beginning of the loop and if the condition is True then only statements in that loop will be executed.
+In Do While loop, condition is tested at the end of the loop so Do While executes the statements in the code block at least once even if the condition Fails.
+
 What is Enum?
+A Java Enum is a special Java type used to define collections of constants. More precisely, a Java enum type is a special kind of Java class. An enum can contain constants, methods and constructors.
+
 What is Iterator?
+Iterators are used in Collection framework in Java to retrieve elements one by one.
+
 Which one will take more memory, an int or Integer?
+Integer
+
 Why is String Immutable in Java?
+1. Saving heap space, 2. Providing security, 3. Faster processing in HashMaps
+
 What is constructor chaining in Java?
+Constructor chaining is the process of calling one constructor from another constructor with respect to current object.
+Within same class: It can be done using this() keyword for constructors in same class
+From parent class: by using super() keyword to call constructor from the base class
+
 The difference between Serial and Parallel Garbage Collector?
+Serial garbage collector works by holding all the application threads. It is designed for the single-threaded environments. It uses just a single thread for garbage collection.
+Parallel garbage collector is also called as throughput collector. It is the default garbage collector of the JVM. Unlike serial garbage collector, this uses multiple threads for garbage collection.
+
 What is JIT stands for?
+JIT is the part of the Java Virtual Machine (JVM) that is used to speed up the execution time. JIT compiles parts of the byte code that have similar functionality at the same time,
+and hence reduces the amount of time needed for compilation.
+
 Explain Java Heap space and Garbage collection?
+When Java programs run on the JVM, objects are created on the heap, which is a portion of memory dedicated to the program. Eventually, some objects will no longer be needed.
+The garbage collector finds these unused objects and deletes them to free up memory.
+
 Can you guarantee the garbage collection process?
+No. Java garbage collection is an automatic process. The programmer does not need to explicitly mark objects to be deleted. The garbage collection implementation lives in the JVM.
+Each JVM can implement garbage collection however it pleases; the only requirement is that it meets the JVM specification.
+
 What is the difference between stack and heap in Java?
+Heap and stack are the areas in main memory (RAM).
+Stack is used to store local variables and function call.
+Heap is used to store objects.
+
 What is reflection in java and why is it useful?
+Reflection is a feature in the Java programming language. It allows an executing Java program to examine or "introspect" upon itself, and manipulate internal properties of the program.
+For example, it's possible for a Java class to obtain the names of all its members and display them.
+
 what is multithreading in java?
+Multithreading is a Java feature that allows concurrent execution of two or more parts of a program for maximum utilization of CPU. Each part of such program is called a thread.
+
 What is the use of synchronization in Java?
+Synchronization is the process of allowing threads to execute one after another. Synchronization is a process which keeps all concurrent threads in execution to be in synch.
+Synchronization avoids memory consistence errors caused due to inconsistent view of shared memory.
+
 What is Framework?
+a framework is a foundation with a specified level of complexity (based on user level) that a programmer may extend using their own code.
+It might include a set of software libraries, compilers, interpreters, or an API.
+
 What are the testing Framework available in java?
+JUnit, TestNG, REST Assured, Selenium, Cucumber etc.
+
 Difference between jUnit and testNG?
+Junit and TestNG. Both of them support annotations, suite tests, ignore tests, exceptions, timeouts and parameterized tests. TestNG supports dependency testing.
+
 What are the dependencies for this project?
+Database connections, Interfaces in Employee class, All the method calls in the unit test etc.
+
 what is dependency injection in java?
+Dependency injection is a technique whereby one object (or static method) supplies the dependencies of another object. A simple way this is acheived in Java is by using getter and setter methods or through a class constructor.
+
 What is static binding and dynamic binding?
-
-
-
-
-
-
-
-
+The binding which can be resolved at compile time by compiler is known as static or early binding. e.g. Overloading
+Dynamic binding happens at runtime. e.g.: Overriding
 
