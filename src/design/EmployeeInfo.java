@@ -91,6 +91,9 @@ public class EmployeeInfo implements Employee {
 	public void setGrossSalary() {
 		grossSalary = baseSalary + calculateSalary();
 	}
+	public String getEmpId() {
+		return this.empId;
+	}
 
 	@Override
 	public void assignDepartment(Department dept) {
