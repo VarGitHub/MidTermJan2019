@@ -1,7 +1,12 @@
 package design;
 
 public interface Employee {
-	
+	public enum Department
+	{
+		IT, HR, Sales, Finance, Development;
+	}
+
+
 	/*Employee is an Interface which contains multiple unimplemented methods.Again few methods
 	has been declared in below. you need to brainstorm to add more methods to meet the business requirements.
 	*/
@@ -9,18 +14,18 @@ public interface Employee {
 	//and then implement these in a concrete class.
 	
 	//employeeId() will return employee id.
-	public int employeeId();
+	//public int employeeId();
 	
 	//employeeName() will return employee name
-	public String employeeName();
+	//public String employeeName();
 	
 	//assignDepartment() will assign employee to departments
-    public void assignDepartment();
+    public void assignDepartment(Department dept);
 	
 	//calculate employee salary
-	public int calculateSalary();
+	public double calculateSalary();
 	
 	//employee benefit
-	public void benefitLayout();
+	public double benefitLayout();
 
 }

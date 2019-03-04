@@ -1,8 +1,12 @@
 package design;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.Scanner;
+import java.util.concurrent.TimeUnit;
 
-public class EmployeeInfo {
+public class EmployeeInfo implements Employee {
 	
  /*This class can be implemented from Employee interface then add additional methods in EmployeeInfo class.
  * Also, Employee interface can be implemented into an abstract class.So create an Abstract class
@@ -20,8 +24,40 @@ public class EmployeeInfo {
 	/*
 	 * declare few static and final fields and some non-static fields
 	 */
-	static String companyName;
-	
+	private String empId;
+	private String lastName;
+	private String firstName;
+	private char gender;
+	private String department;
+	private String title;
+	private double baseSalary;
+	private double grossSalary;
+	private double bonus;
+	private double pension;
+	private int performance;
+	private static String companyName = "PNT";
+	private static int nextId = 1;
+
+
+	public EmployeeInfo() {}
+	public EmployeeInfo(String lastName, String firstName, char gender, double baseSalary, String department, String title) {
+		this.lastName = lastName;
+		this.firstName = firstName;
+		this.gender = gender;
+		this.baseSalary = baseSalary;
+		this.department = department;
+		this.title = title;
+		empId = (new CreateId().generateId());
+	}
+	//Inner class
+	private class CreateId {
+		public String generateId() {
+			String id = "";
+			id = companyName + String.format("%03d", nextId);
+			nextId++;
+			return id;
+		}
+	}
 	/*
 	 * You must implement the logic for below 2 methods and 
 	 * following 2 methods are prototype as well for other methods need to be design,
@@ -32,13 +68,43 @@ public class EmployeeInfo {
 	 * you must have multiple constructor.
 	 * Must implement below constructor.
 	 */
-	public EmployeeInfo(int employeeId){
-		
+
+	@Override
+	public double calculateSalary() {
+		return calculateEmployeePension() + calculateEmployeeBonus(getPerformance()) + benefitLayout();
 	}
-    public EmployeeInfo(String name, int employeeId){
-		
+	public int getPerformance() {
+		return this.performance;
 	}
-	
+	public void setPerformance(int p) {
+		this.performance = p;
+	}
+
+	@Override
+	public void assignDepartment(Department dept) {
+		this.department = dept.toString();
+	}
+
+	@Override
+	public double benefitLayout() {
+		double benefits = 0.0;
+		switch(title) {
+			case "Manager":
+				benefits = 10000.0;
+				break;
+			case "Developer":
+				benefits = 3000.0;
+				break;
+			case "Director":
+				benefits = 25000.0;
+				break;
+			case "Secretary":
+				benefits = 2500.0;
+				break;
+		}
+		return benefits;
+	}
+
 	/*
 	 * This methods should calculate Employee bonus based on salary and performance.
 	 * Then it will return the total yearly bonus. So you need to implement the logic.
@@ -47,8 +113,25 @@ public class EmployeeInfo {
 	 * So you probably need to send 2 arguments.
 	 * 
 	 */
-	public static int calculateEmployeeBonus(int numberOfYearsWithCompany){
-		int total=0;
+	public double calculateEmployeeBonus(int performance){
+		double total=0;
+		switch(performance) {
+			case 1:
+				total = baseSalary * 0.05;
+				break;
+			case 2:
+				total = baseSalary * 0.06;
+				break;
+			case 3:
+				total = baseSalary * 0.07;
+				break;
+			case 4:
+				total = baseSalary * 0.08;
+				break;
+			case 5:
+				total = baseSalary * 0.10;
+				break;
+		}
 		return total;
 	}
 	
@@ -58,21 +141,36 @@ public class EmployeeInfo {
 	 * Hints: pension will be 5% of the salary for 1 year, 10% for 2 years with the company and so on.
 	 * 
 	 */
-	public static int calculateEmployeePension(){
-		int total=0;
+	public double calculateEmployeePension() {
+		double total=0.0;
+		Date joinDate = new Date();
+		Date curDate = new Date();
 		Scanner sc  = new Scanner(System.in);
 		System.out.println("Please enter start date in format (example: May,2015): ");
 		String joiningDate = sc.nextLine();
 		System.out.println("Please enter today's date in format (example: August,2017): ");
 		String todaysDate = sc.nextLine();
-        String convertedJoiningDate = DateConversion.convertDate(joiningDate);
-        String convertedTodaysDate = DateConversion.convertDate(todaysDate);
-
-        //implement numbers of year from above two dates
+        String convertedJoiningDate = "1/"+DateConversion.convertDate(joiningDate);
+        String convertedTodaysDate = "1/"+DateConversion.convertDate(todaysDate);
+        try {
+			joinDate = new SimpleDateFormat("dd/MM/yyyy").parse(convertedJoiningDate);
+			curDate = new SimpleDateFormat("dd/MM/yyyy").parse(convertedTodaysDate);
+		} catch (ParseException e) {
+        	e.printStackTrace();
+		}
+		long diffMsec = Math.abs(curDate.getTime()) - joinDate.getTime();
+		long diff = TimeUnit.DAYS.convert(diffMsec, TimeUnit.MILLISECONDS);
+		int years = (int) diff/365;
+		if (years >=1 && years <=2 )
+			total = baseSalary * 0.05;
+		if (years >= 2 && years <=5)
+			total = baseSalary * 0.10;
+		if (years >= 5 && years <= 10)
+			total = baseSalary * 0.20;
+		if (years > 10)
+			total = baseSalary * 0.25;
+		//implement numbers of year from above two dates
 		//Calculate pension
-
-
-
 		return total;
 	}
 	private static class DateConversion {
