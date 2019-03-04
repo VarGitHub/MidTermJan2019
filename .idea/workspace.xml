@@ -3,14 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="bf125068-80bd-41d7-926e-f856450ecbd3" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodingExamJanuary2019/definition/core-java-conceptual-questions" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CodingExamJanuary2019/definition/core-java-conceptual-questions" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodingExamJanuary2019/design/Employee.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodingExamJanuary2019/design/EmployeeInfo$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodingExamJanuary2019/design/EmployeeInfo$DateConversion.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodingExamJanuary2019/design/EmployeeInfo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/definition/data-structure-questions" beforeDir="false" afterPath="$PROJECT_DIR$/src/definition/data-structure-questions" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/design/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/design/Employee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CodingExamJanuary2019/definition/data-structure-questions" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CodingExamJanuary2019/definition/data-structure-questions" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CodingExamJanuary2019/design/FortuneEmployee.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CodingExamJanuary2019/design/FortuneEmployee.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/design/EmployeeInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/design/EmployeeInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/design/FortuneEmployee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/design/FortuneEmployee.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -30,15 +26,6 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/definition/data-structure-questions">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1830">
-              <caret line="122" lean-forward="true" selection-start-line="122" selection-end-line="122" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/design/Employee.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -51,14 +38,19 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/design/EmployeeInfo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1796">
-              <caret line="131" column="41" selection-start-line="131" selection-start-column="41" selection-end-line="131" selection-end-column="41" />
+            <state relative-caret-position="361">
+              <caret line="88" selection-start-line="88" selection-end-line="88" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#2450#2451#0" expanded="true" />
                 <element signature="e#2467#2468#0" expanded="true" />
                 <element signature="e#2533#2534#0" expanded="true" />
                 <element signature="e#2560#2561#0" expanded="true" />
+                <element signature="e#2456#2457#0" expanded="true" />
+                <element signature="e#2474#2475#0" expanded="true" />
+                <element signature="e#2640#2641#0" expanded="true" />
+                <element signature="e#2673#2674#0" expanded="true" />
+                <element signature="e#2723#2724#0" expanded="true" />
                 <element signature="e#2454#2455#0" expanded="true" />
                 <element signature="e#2493#2494#0" expanded="true" />
               </folding>
@@ -66,11 +58,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/string/problems/DuplicateWord.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/design/FortuneEmployee.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" column="119" lean-forward="true" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="119" />
+            <state relative-caret-position="394">
+              <caret line="53" column="8" selection-start-line="53" selection-start-column="8" selection-end-line="53" selection-end-column="8" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -79,10 +71,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/design/FortuneEmployee.java">
+        <entry file="file://$PROJECT_DIR$/src/design/Employee_Data">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+            <state>
+              <caret column="25" selection-start-column="25" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -152,8 +144,10 @@
         <option value="$PROJECT_DIR$/src/json/parser/CnnAPI.java" />
         <option value="$PROJECT_DIR$/src/definition/core-java-conceptual-questions" />
         <option value="$PROJECT_DIR$/src/design/Employee.java" />
-        <option value="$PROJECT_DIR$/src/design/EmployeeInfo.java" />
         <option value="$PROJECT_DIR$/src/definition/data-structure-questions" />
+        <option value="$PROJECT_DIR$/src/design/EmployeeInfo.java" />
+        <option value="$PROJECT_DIR$/src/design/Employee_Data" />
+        <option value="$PROJECT_DIR$/src/design/FortuneEmployee.java" />
       </list>
     </option>
   </component>
@@ -192,7 +186,13 @@
               <item name="MidtermJanuary2019" type="b2602c69:ProjectViewProjectNode" />
               <item name="MidtermJanuary2019" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="definition" type="462c0819:PsiDirectoryNode" />
+              <item name="databases" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MidtermJanuary2019" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MidtermJanuary2019" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="design" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="MidtermJanuary2019" type="b2602c69:ProjectViewProjectNode" />
@@ -205,7 +205,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551688096743" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551694672235" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
@@ -228,7 +228,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.CnnAPI">
+  <component name="RunManager" selected="Application.FortuneEmployee">
     <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
@@ -249,13 +249,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JsonReaderUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="json.parser.JsonReaderUtil" />
+    <configuration name="FortuneEmployee" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="design.FortuneEmployee" />
       <module name="CodingExamJanuary2019" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="json.parser.*" />
+          <option name="PATTERN" value="design.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -263,13 +263,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LowestNumber" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="math.problems.LowestNumber" />
+    <configuration name="JsonReaderUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="json.parser.JsonReaderUtil" />
       <module name="CodingExamJanuary2019" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="math.problems.*" />
+          <option name="PATTERN" value="json.parser.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -348,18 +348,18 @@
     </configuration>
     <list>
       <item itemvalue="TestNG.UnitTestingMath.testMissingNumber" />
-      <item itemvalue="Application.LowestNumber" />
       <item itemvalue="TestNG.UnitTestingMath.testLowestNumber" />
       <item itemvalue="Application.JsonReaderUtil" />
       <item itemvalue="Application.CnnAPI" />
+      <item itemvalue="Application.FortuneEmployee" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.FortuneEmployee" />
         <item itemvalue="Application.CnnAPI" />
         <item itemvalue="Application.JsonReaderUtil" />
         <item itemvalue="TestNG.UnitTestingMath.testLowestNumber" />
         <item itemvalue="TestNG.UnitTestingMath.testMissingNumber" />
-        <item itemvalue="Application.LowestNumber" />
       </list>
     </recent_temporary>
   </component>
@@ -412,7 +412,7 @@
     <frame x="1280" y="-511" width="1920" height="1080" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16719915" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16719915" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -422,14 +422,14 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32928064" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.2046606" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39817628" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.39817628" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.3284553" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Messages" order="10" visible="true" weight="0.32826748" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32826748" />
       <window_info anchor="right" id="Maven" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -466,28 +466,8 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/parser/qtp.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/parser/UnitTestingStudentProfile.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/codelab/status/roster-file-02-23-2019.csv">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/datastructure/DataReader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="532">
-          <caret line="45" column="10" selection-start-line="45" selection-start-column="10" selection-end-line="45" selection-end-column="10" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/datastructure/UseQueue.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -600,16 +580,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="184">
           <caret line="786" selection-start-line="786" selection-end-line="786" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/databases/ConnectToSqlDB.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="61" selection-start-line="61" selection-end-line="61" />
-          <folding>
-            <element signature="e#2031#2040#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -892,24 +862,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/databases/ConnectToMongoDB.java">
+    <entry file="file://$PROJECT_DIR$/src/definition/data-structure-questions">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1275">
-          <caret line="94" column="113" selection-start-line="94" selection-start-column="113" selection-end-line="94" selection-end-column="113" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/design/Employee.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="48" selection-start-line="22" selection-start-column="48" selection-end-line="22" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/design/FortuneEmployee.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        <state relative-caret-position="1830">
+          <caret line="122" lean-forward="true" selection-start-line="122" selection-end-line="122" />
         </state>
       </provider>
     </entry>
@@ -923,26 +879,82 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/design/Employee.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="48" selection-start-line="22" selection-start-column="48" selection-end-line="22" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/databases/UnitTestConnectDB.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/datastructure/DataReader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="532">
+          <caret line="45" column="10" selection-start-line="45" selection-start-column="10" selection-end-line="45" selection-end-column="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/databases/ConnectToSqlDB.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="37">
+          <caret line="61" selection-start-line="61" selection-end-line="61" />
+          <folding>
+            <element signature="e#2031#2040#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/databases/ConnectToMongoDB.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1275">
+          <caret line="94" column="113" selection-start-line="94" selection-start-column="113" selection-end-line="94" selection-end-column="113" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/design/Employee_Data">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="25" selection-start-column="25" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/design/EmployeeInfo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1796">
-          <caret line="131" column="41" selection-start-line="131" selection-start-column="41" selection-end-line="131" selection-end-column="41" />
+        <state relative-caret-position="361">
+          <caret line="88" selection-start-line="88" selection-end-line="88" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#2450#2451#0" expanded="true" />
             <element signature="e#2467#2468#0" expanded="true" />
             <element signature="e#2533#2534#0" expanded="true" />
             <element signature="e#2560#2561#0" expanded="true" />
+            <element signature="e#2456#2457#0" expanded="true" />
+            <element signature="e#2474#2475#0" expanded="true" />
+            <element signature="e#2640#2641#0" expanded="true" />
+            <element signature="e#2673#2674#0" expanded="true" />
+            <element signature="e#2723#2724#0" expanded="true" />
             <element signature="e#2454#2455#0" expanded="true" />
             <element signature="e#2493#2494#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/definition/data-structure-questions">
+    <entry file="file://$PROJECT_DIR$/src/design/FortuneEmployee.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1830">
-          <caret line="122" lean-forward="true" selection-start-line="122" selection-end-line="122" />
+        <state relative-caret-position="394">
+          <caret line="53" column="8" selection-start-line="53" selection-start-column="8" selection-end-line="53" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

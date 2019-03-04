@@ -1,4 +1,10 @@
 package design;
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 
 public class FortuneEmployee {
 
@@ -15,8 +21,39 @@ public class FortuneEmployee {
 	 **/
 	public static void main(String[] args) {
 		
+		List<EmployeeInfo> empInfo = new ArrayList<>();
+		EmployeeInfo emp = new EmployeeInfo();
+		String[] parts = null;
+		try {
+			BufferedReader br = new BufferedReader((new FileReader("/Users/varija/Documents/Selenium/MidtermJanuary2019/src/design/Employee_Data")));
 
+		while (true) {
+			String line = br.readLine();
+			if (line == null)
+				break;
+			parts = line.split(",");
+		}
+		} catch (FileNotFoundException e){
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		empInfo.add(new EmployeeInfo(parts[0], parts[1], parts[2].charAt(0), Double.parseDouble(parts[3]), parts[4], parts[5]));
+		empInfo.add(new EmployeeInfo("Allen", "Barry", 'M', 80000.0,  "Developer", "1/3/2000"));
 
+		for (EmployeeInfo e : empInfo) {
+			if (e.getLastName().equals("Nadella")) {
+				e.assignDepartment(Employee.Department.IT);
+				e.setPerformance(5);
+				e.setGrossSalary();
+			}
+		}
+		empInfo.get(1).assignDepartment(Employee.Department.Development);
+		empInfo.get(1).setPerformance(3);
+		empInfo.get(1).setGrossSalary();
+
+		for (EmployeeInfo e : empInfo) {
+			System.out.println(e);}
 	}
 
 }

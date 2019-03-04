@@ -5,6 +5,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Scanner;
 import java.util.concurrent.TimeUnit;
+import java.util.Calendar;
 
 public class EmployeeInfo implements Employee {
 	
@@ -28,25 +29,27 @@ public class EmployeeInfo implements Employee {
 	private String lastName;
 	private String firstName;
 	private char gender;
-	private String department;
+	private Department department;
 	private String title;
 	private double baseSalary;
+	private String joiningDate;
 	private double grossSalary;
 	private double bonus;
 	private double pension;
 	private int performance;
 	private static String companyName = "PNT";
 	private static int nextId = 1;
+	Department d;
 
 
 	public EmployeeInfo() {}
-	public EmployeeInfo(String lastName, String firstName, char gender, double baseSalary, String department, String title) {
+	public EmployeeInfo(String lastName, String firstName, char gender, double baseSalary, String title, String joiningDate) {
 		this.lastName = lastName;
 		this.firstName = firstName;
 		this.gender = gender;
 		this.baseSalary = baseSalary;
-		this.department = department;
 		this.title = title;
+		this.joiningDate = joiningDate;
 		empId = (new CreateId().generateId());
 	}
 	//Inner class
@@ -71,7 +74,7 @@ public class EmployeeInfo implements Employee {
 
 	@Override
 	public double calculateSalary() {
-		return calculateEmployeePension() + calculateEmployeeBonus(getPerformance()) + benefitLayout();
+		return calculateEmployeePension(getJoiningDate()) + calculateEmployeeBonus(getPerformance()) + benefitLayout();
 	}
 	public int getPerformance() {
 		return this.performance;
@@ -79,10 +82,19 @@ public class EmployeeInfo implements Employee {
 	public void setPerformance(int p) {
 		this.performance = p;
 	}
+	public String getJoiningDate() {
+		return this.joiningDate;
+	}
+	public String getLastName() {
+		return lastName;
+	}
+	public void setGrossSalary() {
+		grossSalary = baseSalary + calculateSalary();
+	}
 
 	@Override
 	public void assignDepartment(Department dept) {
-		this.department = dept.toString();
+		this.department = dept;
 	}
 
 	@Override
@@ -141,24 +153,23 @@ public class EmployeeInfo implements Employee {
 	 * Hints: pension will be 5% of the salary for 1 year, 10% for 2 years with the company and so on.
 	 * 
 	 */
-	public double calculateEmployeePension() {
+	public double calculateEmployeePension(String joiningDate) {
+		Calendar cal = Calendar.getInstance();
 		double total=0.0;
 		Date joinDate = new Date();
-		Date curDate = new Date();
-		Scanner sc  = new Scanner(System.in);
+		/*Scanner sc  = new Scanner(System.in);
 		System.out.println("Please enter start date in format (example: May,2015): ");
 		String joiningDate = sc.nextLine();
 		System.out.println("Please enter today's date in format (example: August,2017): ");
-		String todaysDate = sc.nextLine();
-        String convertedJoiningDate = "1/"+DateConversion.convertDate(joiningDate);
-        String convertedTodaysDate = "1/"+DateConversion.convertDate(todaysDate);
-        try {
-			joinDate = new SimpleDateFormat("dd/MM/yyyy").parse(convertedJoiningDate);
-			curDate = new SimpleDateFormat("dd/MM/yyyy").parse(convertedTodaysDate);
+		String todaysDate = sc.nextLine();*/
+        //String convertedJoiningDate = "1/"+DateConversion.convertDate(joiningDate);
+        //String convertedTodaysDate = "1/"+DateConversion.convertDate(todaysDate);
+		try {
+			joinDate = new SimpleDateFormat("dd/MM/yyyy").parse(joiningDate);
 		} catch (ParseException e) {
-        	e.printStackTrace();
+			e.printStackTrace();
 		}
-		long diffMsec = Math.abs(curDate.getTime()) - joinDate.getTime();
+		long diffMsec = System.currentTimeMillis() - joinDate.getTime();
 		long diff = TimeUnit.DAYS.convert(diffMsec, TimeUnit.MILLISECONDS);
 		int years = (int) diff/365;
 		if (years >=1 && years <=2 )
@@ -231,5 +242,8 @@ public class EmployeeInfo implements Employee {
 			return date;
 
 		}
+	}
+	public String toString() {
+		return lastName+" "+firstName+", "+empId+", "+title+", "+department+" department "+grossSalary;
 	}
 }
